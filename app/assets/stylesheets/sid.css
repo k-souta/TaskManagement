@@ -1,0 +1,86 @@
+.sidebar {
+  position: fixed;
+  top: 60px; /* ヘッダーの高さを考慮 */
+  left: 0;
+  width: 230px;
+  height: calc(100% - 60px);
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 999; /* メニューが最前面になるようにする */
+}
+
+.sidebar.visible {
+  transform: translateX(0); /* 表示状態 */
+  position: fixed;
+}
+
+.hidden {
+  display: none;
+  position: absolute;
+}
+
+/*メニューボタンの詳細*/
+#toggleSidebar {
+  position: fixed;
+  top: calc(50% - 40px);
+  left: 0; /*真横に位置*/
+  z-index: 1001;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  width: 30px; /*横幅を狭く*/
+  height: 80px; /*縦長に*/
+  border-radius: 0;
+  cursor: pointer;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight:  bold;
+}
+
+/*indexメインの画面の位置サイドバーが出ていない状態*/
+.main-content {
+  margin-left: 20px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.url-group {
+  margin-bottom: 10px;
+}
+
+.url-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.sub-task {
+  border: 2px solid #007BFF;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.sub-task .content {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px dashed #007BFF;
+  background-color: #9f9f9f;
+}
+
+.editable {
+  width: 100%;
+  min-height: 50px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff;
+  resize: vertical;
+}

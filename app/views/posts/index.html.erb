@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>通知機能に音をつける</title>
+  <%= javascript_include_tag 'timer' %> <!-- timer.js を読み込み -->
+  <%= javascript_include_tag 'url' %> <!-- url.js を読み込み -->
+  <%= javascript_include_tag 'sid' %><!--sid.js を読み込み-->
+  <%= stylesheet_link_tag 'sid', media: 'all' %>
+</head>
+<body>
+
+  <button id="toggleSidebar">☰</button>
+  <div id="sidebar" class="sidebar hidden">
+    <p>ここはサイドバーです。</p>
+          <div class="saved-task-name hidden">
+        <strong>保存されたタスク名</strong>
+        <span id="saveTaskButton"></span>
+      </div>
+  </div>
+
+  <div class="main-content">
+    <h1>タスク管理</h1>
+    <div class="task">
+
+      <h2>タスク名: プロジェクトA
+        <button id="saveTaskButton">保存</button>
+      </h2>
+      <div class="sub-task">
+        <h3>
+          小タスク名: 通知とリンク機能
+          <button class="add-sub-task">追加</button> <!-- 追加ボタン -->
+          <button class="remove-sub-task">削除</button> <!-- 削除ボタン -->
+          </h3>
+
+        <div class="content">
+          <label for="taskDetail">詳細内容:</label>
+          <textarea id="taslDetail" class="editable" placeholder="ここに詳細を記述してください"></textarea>
+          </div>
+
+        <div class="timer-notification">
+          <h4>タイマー通知</h4>
+          <label for="time">通知までの時間（秒）:</label>
+          <input type="number" id="time" placeholder="秒数を入力" min="1">
+          <button id="startTimerButton">タイマー開始</button>
+          <div id="timerDisplay">残り時間: 0秒</div>
+        </div>
+
+        <div class="url-feature">
+          <h4>URLリンク機能</h4>
+          <div id="urlContainer">
+            <div class="url-group">
+              <label for="url">リンクURL:</label>
+              <input type="url" class="url-input" id="url" placeholder="https://example.com">
+              <button class="redirect-Button" id="redirectToURLButton">リンクへ移動</button>
+              <button class="remove-button">-</button>
+            </div>
+          </div>
+          <button id="redButton">+</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

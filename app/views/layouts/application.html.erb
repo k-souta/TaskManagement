@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Management</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbo-track': 'reload' %>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="app-name">
+        <%= link_to "Task Management", "#", class: "app-name-link" %>
+      </div>
+      <div class="header-actions">
+                  <%= link_to "ログアウト", "#", method: :delete, class: "logout-button" %>
+
+
+      </div>
+    </div>
+  </header>
+  <main>
+    <%= yield %>
+  </main>
+</body>
+</html>
