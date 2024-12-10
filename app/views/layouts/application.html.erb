@@ -5,7 +5,7 @@
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbo-track': 'reload' %>
+
 </head>
 <body>
   <header>
@@ -14,8 +14,14 @@
         <%= link_to "Task Management", "#", class: "app-name-link" %>
       </div>
       <div class="header-actions">
+        <% if current_user%>
+        <span><%= current_user.nickname%></span>
+        <div>
+      <div class="header-actions">
                   <%= link_to "ログアウト", "#", method: :delete, class: "logout-button" %>
-
+        <% else %>
+        <%= link_to "ログイン", "#", class: "login-button"%>
+        <% end %>
 
       </div>
     </div>

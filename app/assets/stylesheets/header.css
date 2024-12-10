@@ -1,14 +1,20 @@
 .header-container {
+  position: fixed; /* ヘッダーを画面上部に固定 */
+  top: 0; /* 上部に配置 */
+  left: 0;
+  width: 100%; /* 横幅を画面全体に設定 */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px 40px;
   background-color: #a9a9a9;
   color: white;
+  z-index: 1000; /* ヘッダーが最前面になるように */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* 下に影をつける */
 }
 
 .app-name-link {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: white;
   text-decoration: none;
@@ -17,7 +23,7 @@
 
 .header-actions .login-button,
 .header-actions .logout-button {
-  font-size: 16px;
+  font-size: px;
   color: white;
   text-decoration: none;
   background-color: #007BFF;
@@ -29,4 +35,3 @@
 .header-actions .logout-button:hover {
   background-color: #0056b3;
 }
-
