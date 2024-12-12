@@ -4,13 +4,15 @@
   left: 0;
   width: 100%; /* 横幅を画面全体に設定 */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 20px 40px;
+  padding: 10px 0px;
   background-color: #a9a9a9;
   color: white;
   z-index: 1000; /* ヘッダーが最前面になるように */
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* 下に影をつける */
+  overflow: hidden; 
+  flex-wrap: nowrap;
 }
 
 .app-name-link {
@@ -21,13 +23,16 @@
   font-family: 'American Typewriter';
 }
 
+
+
 .header-actions .login-button,
-.header-actions .logout-button {
-  font-size: px;
+.header-actions .logout-button,
+.header-actions .signup-button {
+  font-size: 15px;
   color: white;
   text-decoration: none;
   background-color: #007BFF;
-  padding: 5px 10px;
+  padding: 5px 20px;
   border-radius: 5px;
 }
 
@@ -35,3 +40,4 @@
 .header-actions .logout-button:hover {
   background-color: #0056b3;
 }
+

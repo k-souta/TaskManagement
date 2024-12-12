@@ -1,6 +1,6 @@
 .sidebar {
   position: fixed;
-  top: 60px; /* ヘッダーの高さを考慮 */
+  top: 70px; /* ヘッダーの高さを考慮 */
   left: 0;
   width: 230px;
   height: calc(100% - 60px);
@@ -47,6 +47,9 @@
   margin-left: 20px;
   padding: 20px;
   transition: margin-left 0.3s ease;
+  margin-left: 250px; /* サイドバーを考慮した左マージン */
+  margin-top: 120px;   /* ヘッダー分の高さを確保 */
+
 }
 
 .url-group {
@@ -157,4 +160,124 @@ body {
 
 .field input[type="checkbox"] {
   margin-right: 5px;
+}
+
+.new_task-button {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none; /* 下線を削除 */
+}
+
+.new_task-button:hover {
+  background-color: #0056b3;
+}
+
+.task {
+  max-height: 80vh;
+  overflow-y: scroll;
+  top: 70px;
+}
+/* 入力フィールド全般の幅を広げる */
+.project-name-input,
+.sub_task_input,
+.editable,
+.url-input {
+  width: 100%; /* 幅を100%に設定 */
+  padding: 10px; /* パディングを追加して入力エリアを広げる */
+  font-size: 16px; /* フォントサイズを設定 */
+  border: 1px solid #ccc; /* 枠線 */
+  border-radius: 4px; /* 角を丸く */
+}
+
+/* テキストフィールドのスタイル */
+.input-large {
+  width: 100%; /* 親要素の幅に合わせる */
+  max-width: 600px; /* 最大幅を指定 */
+  padding: 10px; /* 内側の余白 */
+  font-size: 16px; /* フォントサイズを調整 */
+  border: 1px solid #ccc; /* 枠線を追加 */
+  border-radius: 5px; /* 角を丸める */
+  box-sizing: border-box; /* パディングを含めた幅を計算 */
+}
+
+/* テキストエリアのスタイル */
+.textarea-large {
+  width: 100%; /* 親要素の幅に合わせる */
+  max-width: 600px; /* 最大幅を指定 */
+  height: 150px; /* 高さを設定 */
+  padding: 10px; /* 内側の余白 */
+  font-size: 16px; /* フォントサイズを調整 */
+  border: 1px solid #ccc; /* 枠線を追加 */
+  border-radius: 5px; /* 角を丸める */
+  box-sizing: border-box; /* パディングを含めた幅を計算 */
+}
+
+/* 数値入力フィールドのスタイル */
+.input-number-large {
+  width: 80px; /* 固定幅を設定 */
+  padding: 5px; /* 内側の余白 */
+  font-size: 16px; /* フォントサイズを調整 */
+  text-align: center; /* 数字を中央揃え */
+  border: 1px solid #ccc; /* 枠線を追加 */
+  border-radius: 5px; /* 角を丸める */
+  box-sizing: border-box; /* パディングを含めた幅を計算 */
+}
+
+
+/* タイマーの入力フィールドの幅調整 */
+.time-input {
+  width: 80px; /* 時間、分、秒の入力フィールドの幅 */
+  margin-right: 10px;
+}
+
+.task-item-box {
+  border: 1px solid #ccc; /* 枠線 */
+  padding: 10px;          /* 内側の余白 */
+  margin: 10px 0;         /* 上下のマージン */
+  border-radius: 5px;     /* 角を丸くする */
+  background-color: #f9f9f9; /* 背景色 */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 影 */
+  transition: background-color 0.3s, transform 0.3s; /* ホバーアニメーション */
+    text-decoration: none; /* 下線を削除 */
+}
+
+.task-item-box:hover {
+  background-color: #e0f7fa; /* ホバー時の背景色 */
+  transform: scale(1.02);    /* ホバー時に少し拡大 */
+}
+
+.task-link {
+  text-decoration: none; /* 下線を削除 */
+  color: #333;           /* 文字色 */
+  font-weight: bold;     /* 太字 */
+}
+
+.task-link:hover {
+  color: #007bff;        /* ホバー時の文字色 */
+}
+
+.sub-task a {
+  border: 1px solid #ccc; /* 枠線 */
+  padding: 10px;          /* 内側の余白 */
+  margin: 10px 0;         /* 上下のマージン */
+  border-radius: 5px;     /* 角を丸くする */
+  background-color: #f9f9f9; /* 背景色 */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 影 */
+  transition: background-color 0.3s, transform 0.3s; /* ホバーアニメーション */
+}
+
+#taskContent {
+  max-height: calc(100vh - 100px); /* 表示領域の高さを調整 */
+  overflow-y: auto; /* 縦スクロールを有効にする */
+  padding: 10px; /* 内側の余白 */
+  margin-top: 20px; /* ヘッダー分の余白を追加 */
+  background-color: #1f1f1f; /* 背景色を調整 */
+  border-radius: 8px; /* 見た目を調整 */
+  width: 50vw;
 }

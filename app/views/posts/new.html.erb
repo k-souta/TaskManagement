@@ -1,0 +1,48 @@
+<div class="main-content">
+  <h1>タスク管理</h1>
+  <div class="task">
+<%= form_with(url: posts_path, model: @post, local: true) do |form| %>
+
+<%= form_with(model: @post, local: true) do |f| %>
+  <%= f.label :project_name, "プロジェクト名" %>
+  <%= f.text_field :project_name, class: 'input-large', placeholder: 'プロジェクト名を入力' %>
+
+  <% 5.times do |i| %>
+    <fieldset>
+      <%= f.label :"sub_task_name_#{i + 1}", "小タスク#{i + 1} 名" %>
+      <%= f.text_field :"sub_task_name_#{i + 1}", class: 'input-large', placeholder: "小タスク#{i + 1}" %>
+
+      <%= f.label :"task_detail_#{i + 1}", "詳細" %>
+      <%= f.text_area :"task_detail_#{i + 1}", class: 'textarea-large', placeholder: '詳細を入力' %><br>
+
+      <%= f.label :"hours_#{i + 1}", "時" %>
+      <%= f.number_field :"hours_#{i + 1}", class: 'input-number-large', value: 0 %>
+
+      <%= f.label :"minutes_#{i + 1}", "分" %>
+      <%= f.number_field :"minutes_#{i + 1}", class: 'input-number-large', value: 0 %>
+
+      <%= f.label :"seconds_#{i + 1}", "秒" %>
+      <%= f.number_field :"seconds_#{i + 1}", class: 'input-number-large', value: 0 %><br>
+
+      <%= f.label :"url_#{i + 1}", "URL" %>
+      <%= f.text_field :"url_#{i + 1}", class: 'input-large', placeholder: 'URLを入力' %>
+    </fieldset>
+  <% end %>
+
+  <%= f.submit "保存" %>
+<% end %>
+
+<% end %>
+
+
+    <%= javascript_include_tag 'timer' %> <!-- timer.js を読み込み -->
+    <%= javascript_include_tag 'url' %> <!-- url.js を読み込み -->
+  </div>
+</div>
+
+
+
+
+
+
+
