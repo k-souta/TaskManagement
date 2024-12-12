@@ -11,16 +11,17 @@
   <header>
     <div class="header-container">
       <div class="app-name">
-        <%= link_to "Task Management", "#", class: "app-name-link" %>
+        <%= link_to "Task Management", posts_path, class: "app-name-link" %>
       </div>
       <div class="header-actions">
         <% if current_user%>
         <span><%= current_user.nickname%></span>
         <div>
       <div class="header-actions">
-                  <%= link_to "ログアウト", "#", method: :delete, class: "logout-button" %>
+        <%= button_to "ログアウト", destroy_user_session_path, method: :delete, class: "logout-button" %>
         <% else %>
-        <%= link_to "ログイン", "#", class: "login-button"%>
+        <%= link_to "ログイン", new_user_session_path, class: "login-button"%>
+        <%= link_to "新規登録", new_user_registration_path , class: "signup-button"%>
         <% end %>
 
       </div>
@@ -29,5 +30,11 @@
   <main>
     <%= yield %>
   </main>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    console.log("JavaScript is loaded correctly.");
+  });
+</script>
+
 </body>
 </html>
