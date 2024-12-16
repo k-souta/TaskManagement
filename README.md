@@ -23,6 +23,16 @@
 >>>
 
 >実装した機能についての画像やGIFおよびその説明
+>>新規登録ボタンを押し新規投稿画面での入力フォーム
+>>[![Image from Gyazo](https://i.gyazo.com/81c686dc93a4eb89d91b9e105fff4a7a.png)](https://gyazo.com/81c686dc93a4eb89d91b9e105fff4a7a)
+>>[![Image from Gyazo](https://i.gyazo.com/58d1e6b35e0bf728614e2483271861c3.png)](https://gyazo.com/58d1e6b35e0bf728614e2483271861c3)  
+
+>>登録後左側についているサイドバーを表示させるボタンを押しメイン画面に登録したタスクを表示させる
+>>[![Image from Gyazo](https://i.gyazo.com/da1f2fd46a9f420af30d0e34a8d1d89e.png)](https://gyazo.com/da1f2fd46a9f420af30d0e34a8d1d89e)
+>>[![Image from Gyazo](https://i.gyazo.com/09d4fc238d236b4e92d580affca9159c.png)](https://gyazo.com/09d4fc238d236b4e92d580affca9159c)  
+
+>>登録したデータでリンクへこちらを押すとリンク先にとび、タスク開始ボタンを押せば計測がスタートし時間になったらプッシュ通知が来る
+>>[![Image from Gyazo](https://i.gyazo.com/73d4c863d7e7ac7893b12bd67d1549ed.png)](https://gyazo.com/73d4c863d7e7ac7893b12bd67d1549ed)
 
 >実装予定の機能  
 >>現在、経過時間を測定しタスクが完了したらタスク完了ボタンを押すと測定終了が可能になるものを実装中  
