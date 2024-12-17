@@ -30,6 +30,11 @@ onrender.com)
 >>[![Image from Gyazo](https://i.gyazo.com/09d4fc238d236b4e92d580affca9159c.png)](https://gyazo.com/09d4fc238d236b4e92d580affca9159c)  
 >>登録したデータでリンクへこちらを押すとリンク先にとび、タスク開始ボタンを押せば計測がスタートし時間になったらプッシュ通知が来る
 >>[![Image from Gyazo](https://i.gyazo.com/73d4c863d7e7ac7893b12bd67d1549ed.png)](https://gyazo.com/73d4c863d7e7ac7893b12bd67d1549ed)
+
+
+https://github.com/user-attachments/assets/1526a122-d11a-425e-aaf2-84df321a5ce7
+
+
 ># 実装予定の機能  
 >>現在、経過時間を測定しタスクが完了したらタスク完了ボタンを押すと測定終了が可能になるものを実装中  
 >>>今後はタスクを終えたものを格納できる場所を作成し、そこに入れれるようにする
