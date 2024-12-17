@@ -26,7 +26,7 @@ https://taskmanagement-5i3x.onrender.com
 [![Image from Gyazo](https://i.gyazo.com/58d1e6b35e0bf728614e2483271861c3.png)](https://gyazo.com/58d1e6b35e0bf728614e2483271861c3)  
 登録後左側についているサイドバーを表示させるボタンを押しメイン画面に登録したタスクを表示させる
 [![Image from Gyazo](https://i.gyazo.com/da1f2fd46a9f420af30d0e34a8d1d89e.png)](https://gyazo.com/da1f2fd46a9f420af30d0e34a8d1d89e)
-![Image from Gyazo](https://i.gyazo.com/09d4fc238d236b4e92d580affca9159c.png)](https://gyazo.com/09d4fc238d236b4e92d580affca9159c)  
+[![Image from Gyazo](https://i.gyazo.com/09d4fc238d236b4e92d580affca9159c.png)](https://gyazo.com/09d4fc238d236b4e92d580affca9159c)  
 登録したデータでリンクへこちらを押すとリンク先にとび、タスク開始ボタンを押せば計測がスタートし時間になったらプッシュ通知が来る
 [![Image from Gyazo](https://i.gyazo.com/73d4c863d7e7ac7893b12bd67d1549ed.png)](https://gyazo.com/73d4c863d7e7ac7893b12bd67d1549ed)
 
